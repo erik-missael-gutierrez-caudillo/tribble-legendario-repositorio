@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    
+  /* Generales */
+    @import url('https://fonts.googleapis.com/css2? family= Big+Shoulders+Display:wght@700 & family= Manrope:wght@500;700 & family= Maven+Pro:wght@ 400;600;800 & mostrar=cambiar');
+
+    html, body {
+      font-family: 'Manrope', sans-serif;
+      height: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgba(5, 185, 240, 0.176);
+    }
+    
+    main{
+      display: flex;
+      flex-direction: column;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    #code {
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #container__code {
+      background-color: white;
+      min-width: 375px;
+      width: 375px;
+      max-width: 1440px;
+      display: grid;
+      grid-template-columns: repeat(1, 4fr);
+      grid-auto-rows: minmax(auto);
+      margin: 3% auto;
+      padding: 1%;
+      border-radius: 15px;
+    }
+
+    .code__img {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    .img--qr {
+      object-fit: cover;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .texts {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-weight: 800;
+      padding: 3%;
+    }
+
+    p {
+      padding: 3%;
+      font-weight: 500;
+      color: rgb(183, 182, 182);
+    }
+  </style>
+</head>
+<body>
+<main>
+  <article id="code">
+    <div id="container__code">
+      <div class="code__img">
+        <img src="../qr-code-component-main/images/image-qr-code.png" alt="" width="200" class="img--qr">
+      </div>
+      <div class="texts">
+        <h1>
+          Improve your front-end skills by building projects
+        </h1>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Erik Gutierrez</a>.
+  </div>
+</body>
+</html>
